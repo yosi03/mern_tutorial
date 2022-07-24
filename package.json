@@ -1,10 +1,15 @@
 {
-    "name": "@types/webidl-conversions",
-    "version": "6.1.1",
-    "description": "TypeScript definitions for webidl-conversions",
-    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/webidl-conversions",
+    "name": "@types/whatwg-url",
+    "version": "8.2.2",
+    "description": "TypeScript definitions for whatwg-url",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/whatwg-url",
     "license": "MIT",
     "contributors": [
+        {
+            "name": "Alexander Marks",
+            "url": "https://github.com/aomarks",
+            "githubUsername": "aomarks"
+        },
         {
             "name": "ExE Boss",
             "url": "https://github.com/ExE-Boss",
@@ -16,10 +21,13 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-        "directory": "types/webidl-conversions"
+        "directory": "types/whatwg-url"
     },
     "scripts": {},
-    "dependencies": {},
-    "typesPublisherContentHash": "bc47f919faf031afa91cea9b170f96f05eeac452057ba17794386552a99d0ad7",
-    "typeScriptVersion": "3.6"
+    "dependencies": {
+        "@types/node": "*",
+        "@types/webidl-conversions": "*"
+    },
+    "typesPublisherContentHash": "ea85d67c501583ff421cfbf206fafac0410c464edef169a6d88e06ecfe226dfc",
+    "typeScriptVersion": "4.0"
 }
