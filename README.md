@@ -1,16 +1,23 @@
-# Installation
-> `npm install --save @types/whatwg-url`
+# abbrev-js
 
-# Summary
-This package contains type definitions for whatwg-url (https://github.com/jsdom/whatwg-url#readme).
+Just like [ruby's Abbrev](http://apidock.com/ruby/Abbrev).
 
-# Details
-Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/whatwg-url.
+Usage:
 
-### Additional Details
- * Last updated: Tue, 21 Jun 2022 16:31:40 GMT
- * Dependencies: [@types/webidl-conversions](https://npmjs.com/package/@types/webidl-conversions), [@types/node](https://npmjs.com/package/@types/node)
- * Global values: none
+    var abbrev = require("abbrev");
+    abbrev("foo", "fool", "folding", "flop");
+    
+    // returns:
+    { fl: 'flop'
+    , flo: 'flop'
+    , flop: 'flop'
+    , fol: 'folding'
+    , fold: 'folding'
+    , foldi: 'folding'
+    , foldin: 'folding'
+    , folding: 'folding'
+    , foo: 'foo'
+    , fool: 'fool'
+    }
 
-# Credits
-These definitions were written by [Alexander Marks](https://github.com/aomarks), and [ExE Boss](https://github.com/ExE-Boss).
+This is handy for command-line scripts, or other cases where you want to be able to accept shorthands.
